@@ -16,6 +16,7 @@ NEWSPIDER_MODULE = 'openpolitics.spiders'
 
 MONGO_URI = '10.1.0.5'
 MONGO_DATABASE = 'op-spider'
+LOG_ENABLED = False
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'openpolitics (+http://www.yourdomain.com)'
@@ -24,7 +25,7 @@ MONGO_DATABASE = 'op-spider'
 ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-#CONCURRENT_REQUESTS = 32
+CONCURRENT_REQUESTS = 32
 
 # Configure a delay for requests for the same website (default: 0)
 # See http://scrapy.readthedocs.org/en/latest/topics/settings.html#download-delay
