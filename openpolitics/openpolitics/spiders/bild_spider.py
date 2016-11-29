@@ -3,6 +3,7 @@ from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor
 from scrapy.selector import HtmlXPathSelector
 
 from openpolitics.items import OpenpoliticsItem
+import dateutil.parser
 
 class BildSpider(CrawlSpider):
     name = 'bild'
@@ -25,15 +26,14 @@ class BildSpider(CrawlSpider):
         hxs = HtmlXPathSelector(response)
         title = hxs.select('//span[@class="headline"]/text()').extract_first().strip()
         body = [s.strip() for s in hxs.select('//div[@class="txt"]/p//text()').extract()]
-        time = hxs.select('//div[@class="authors"]/time/@datetime').extract_first()
+        time = hxs.select('//div[@class="authors"]//time/@datetime').extract_first()
 
-        print time
+        if body:
+            item = OpenpoliticsItem()
+            item['title'] = title
+            item['text'] = body
+            item['url'] = response.url
+            item['date'] = dateutil.parser.parse(time)
+            item['i'] = 0
 
-        item = OpenpoliticsItem()
-        item['title'] = title
-        item['text'] = body
-        item['url'] = response.url
-        item['time'] = time
-        item['i'] = 3
-
-        return item
+            return item
