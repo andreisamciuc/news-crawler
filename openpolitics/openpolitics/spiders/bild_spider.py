@@ -25,7 +25,7 @@ class BildSpider(CrawlSpider):
         hxs = HtmlXPathSelector(response)
         title = hxs.select('//span[@class="headline"]/text()').extract_first().strip()
         body = [s.strip() for s in hxs.select('//div[@class="txt"]/p//text()').extract()]
-        time = hxs.select('//time/@datetime').extract_first()
+        time = hxs.select('//div[@class="authors"]/time/@datetime').extract_first()
 
         print time
 
