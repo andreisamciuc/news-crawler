@@ -7,7 +7,7 @@ import dateutil.parser
 
 class RepubblicaSpider(CrawlSpider):
     name = 'repubblica'
-    allowed_domains = ['www.repubblica.it']
+    allowed_domains = ['repubblica.it']
     start_urls = ['http://www.repubblica.it']
     rules = (
         # Sites which should be saved
@@ -19,12 +19,12 @@ class RepubblicaSpider(CrawlSpider):
         ),
 
         # Sites which should be followed, but not saved
-        # Rule(SgmlLinkExtractor(allow='(news|politik)', deny='suche/')),
+        Rule(SgmlLinkExtractor(allow='', deny='video')),
     )
 
     def parse_page(self, response):
         hxs = HtmlXPathSelector(response)
-        title = hxs.select('//h1[@itemprop="headline name"]/text()[not(ancestor::script|ancestor::style|ancestor::noscript)]').extract_first().strip()
+        title = hxs.select('//h1[@itemprop="headline name"]//text()[not(ancestor::script|ancestor::style|ancestor::noscript)]').extract_first().strip()
         body = [s.strip() for s in hxs.select('//span[@itemprop="articleBody"]//text()[not(ancestor::script|ancestor::style|ancestor::noscript|ancestor::h1)]').extract()]
         time = hxs.select('//meta[@property="article:published_time"]/@content').extract_first()
 

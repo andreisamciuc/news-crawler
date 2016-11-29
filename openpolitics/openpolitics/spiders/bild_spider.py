@@ -7,7 +7,7 @@ import dateutil.parser
 
 class BildSpider(CrawlSpider):
     name = 'bild'
-    allowed_domains = ['www.bild.de']
+    allowed_domains = ['bild.de']
     start_urls = ['http://www.bild.de']
     rules = (
         # Sites which should be saved
@@ -19,12 +19,12 @@ class BildSpider(CrawlSpider):
         ),
 
         # Sites which should be followed, but not saved
-        # Rule(SgmlLinkExtractor(allow='(news|politik)', deny='suche/')),
+        Rule(SgmlLinkExtractor(allow='', deny='suche/')),
     )
 
     def parse_page(self, response):
         hxs = HtmlXPathSelector(response)
-        title = hxs.select('//span[@class="headline"]/text()').extract_first().strip()
+        title = hxs.select('//span[@class="headline"]//text()').extract_first().strip()
         body = [s.strip() for s in hxs.select('//div[@class="txt"]/p//text()').extract()]
         time = hxs.select('//div[@class="authors"]//time/@datetime').extract_first()
 
