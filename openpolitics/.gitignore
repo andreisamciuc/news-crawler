@@ -1,1 +1,1 @@
-openpolitics/spiders/*.pyc
+openpolitics/**/*.pyc

@@ -26,7 +26,7 @@ class SuedDeutscheSpider(CrawlSpider):
     def parse_page(self, response):
         hxs = HtmlXPathSelector(response)
         title = hxs.select('//meta[@property="og:title"]/@content').extract_first()
-        body = [s.strip() for s in hxs.select('//div[@class="body"]//p//text()').extract()]
+        body = [s.strip() for s in hxs.select('//section[@class="body"]//p//text()').extract()]
         time = hxs.select('//time[@class="timeFormat"]/@datetime').extract_first()
 
         if body:
