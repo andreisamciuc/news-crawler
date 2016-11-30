@@ -5,11 +5,11 @@ from scrapy.selector import HtmlXPathSelector
 from openpolitics.items import OpenpoliticsItem
 import dateutil.parser
 
-class IdnesSpider(CrawlSpider):
+class NovinkySpider(CrawlSpider):
     name = 'novinky'
     allowed_domains = ['novinky.cz']
     start_urls = ['http://www.novinky.cz']
-    cat_re = 'ekonomika|domaci|zahranicniwirtschaft'
+    cat_re = 'ekonomika|domaci|zahranicni'
     rules = (
         # Sites which should be saved
         Rule(
@@ -20,7 +20,7 @@ class IdnesSpider(CrawlSpider):
         ),
 
         # Sites which should be followed, but not saved
-        Rule(SgmlLinkExtractor(allow='', deny='')),
+        Rule(SgmlLinkExtractor(allow='(%s)' % cat_re, deny='')),
     )
 
     def parse_page(self, response):

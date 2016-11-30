@@ -5,11 +5,11 @@ from scrapy.selector import HtmlXPathSelector
 from openpolitics.items import OpenpoliticsItem
 import dateutil.parser
 
-class SuedDeutscheSpider(CrawlSpider):
-    name = 'sued'
-    allowed_domains = ['sueddeutsche.de']
-    start_urls = ['http://www.sueddeutsche.de']
-    cat_re = 'politik|wirtschaft'
+class FAZSpider(CrawlSpider):
+    name = 'faz'
+    allowed_domains = ['faz.net']
+    start_urls = ['http://www.faz.net']
+    cat_re = 'politik|wirtschaft|finanzen'
     rules = (
         # Sites which should be saved
         Rule(
@@ -26,8 +26,8 @@ class SuedDeutscheSpider(CrawlSpider):
     def parse_page(self, response):
         hxs = HtmlXPathSelector(response)
         title = hxs.select('//meta[@property="og:title"]/@content').extract_first()
-        body = [s.strip() for s in hxs.select('//div[@class="body"]//p//text()').extract()]
-        time = hxs.select('//time[@class="timeFormat"]/@datetime').extract_first()
+        body = [s.strip() for s in hxs.select('//div[@class="FAZArtikelText"]//p//text()').extract()]
+        time = hxs.select('//span[@class="Datum"]/@content').extract_first()
 
         if body:
             item = OpenpoliticsItem()
@@ -36,6 +36,6 @@ class SuedDeutscheSpider(CrawlSpider):
             item['url'] = response.url
             # if time:
             item['time'] = time
-            item['i'] = 4
+            item['i'] = 5
 
             return item
