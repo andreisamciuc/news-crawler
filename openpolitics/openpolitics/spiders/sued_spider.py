@@ -34,8 +34,7 @@ class SuedDeutscheSpider(CrawlSpider):
             item['title'] = title
             item['text'] = body
             item['url'] = response.url
-            # if time:
-            item['time'] = time
+            item['date'] = dateutil.parser.parse(time)
             item['i'] = 4
 
             return item
