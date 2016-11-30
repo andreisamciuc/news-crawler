@@ -14,9 +14,9 @@ BOT_NAME = 'openpolitics'
 SPIDER_MODULES = ['openpolitics.spiders']
 NEWSPIDER_MODULE = 'openpolitics.spiders'
 
-MONGO_URI = '10.1.0.5'
+MONGO_URI = 'localhost'
 MONGO_DATABASE = 'op-spider'
-LOG_ENABLED = False
+# LOG_ENABLED = False
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'openpolitics (+http://www.yourdomain.com)'
