@@ -14,7 +14,7 @@ BOT_NAME = 'openpolitics'
 SPIDER_MODULES = ['openpolitics.spiders']
 NEWSPIDER_MODULE = 'openpolitics.spiders'
 
-MONGO_URI = 'localhost'
+MONGO_URI = '10.1.0.5'
 MONGO_DATABASE = 'op-spider'
 #LOG_ENABLED = False
 
