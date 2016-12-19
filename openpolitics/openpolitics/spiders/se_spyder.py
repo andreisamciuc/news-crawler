@@ -9,7 +9,7 @@ from simhash import Simhash
 
 class SeSpider(CrawlSpider):
     name = 'se'
-    allowed_domains = ['www.se.pl']
+    allowed_domains = ['se.pl']
     start_urls = ['http://www.se.pl']
     cat_re = 'polityka|swiat'
     rules = (

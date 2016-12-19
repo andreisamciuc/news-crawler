@@ -8,7 +8,7 @@ import dateutil.parser
 
 class PublicoSpider(CrawlSpider):
     name = 'publico'
-    allowed_domains = ['www.publico.pt']
+    allowed_domains = ['publico.pt']
     start_urls = ['http://www.publico.pt']
     cat_re = 'politica|mundo|economia'
     rules = (
