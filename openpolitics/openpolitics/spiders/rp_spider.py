@@ -34,5 +34,6 @@ class IdnesSpider(CrawlSpider):
             item['text'] = body
             item['url'] = response.url
             item['time'] = time
+            item['i'] = 14
 
             return item
