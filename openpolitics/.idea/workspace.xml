@@ -68,9 +68,11 @@
       <file leaf-file-name="rp_spider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/openpolitics/spiders/rp_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="315">
+              <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#52#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,11 +80,9 @@
       <file leaf-file-name="publico_spyder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/openpolitics/spiders/publico_spyder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#52#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="1" column="45" lean-forward="true" selection-start-line="1" selection-start-column="45" selection-end-line="2" selection-end-column="47" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -141,11 +141,11 @@
         <option value="$PROJECT_DIR$/openpolitics/spiders/wybo_spider.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/se_spyder.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/kathimerini_spider.py" />
-        <option value="$PROJECT_DIR$/openpolitics/spiders/publico_spyder.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/blesk_spyder.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/jn_spyder.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/bild_spider.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/idnes_spider.py" />
+        <option value="$PROJECT_DIR$/openpolitics/spiders/publico_spyder.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/rp_spider.py" />
         <option value="$PROJECT_DIR$/openpolitics/settings.py" />
       </list>
@@ -773,18 +773,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/openpolitics/spiders/rp_spider.py">
+    <entry file="file://$PROJECT_DIR$/openpolitics/spiders/publico_spyder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="15">
+          <caret line="1" column="45" lean-forward="true" selection-start-line="1" selection-start-column="45" selection-end-line="2" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/openpolitics/spiders/publico_spyder.py">
+    <entry file="file://$PROJECT_DIR$/openpolitics/spiders/rp_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="315">
+          <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
           </folding>

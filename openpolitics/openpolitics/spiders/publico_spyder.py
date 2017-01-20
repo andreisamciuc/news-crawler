@@ -1,7 +1,6 @@
 from scrapy.contrib.spiders import CrawlSpider, Rule
-from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor
 from scrapy.selector import HtmlXPathSelector
-
+from scrapy.linkextractors import LinkExtractor
 from openpolitics.items import OpenpoliticsItem
 
 import dateutil.parser
@@ -14,14 +13,14 @@ class PublicoSpider(CrawlSpider):
     rules = (
         # Sites which should be saved
         Rule(
-            SgmlLinkExtractor(allow='(%s)' % cat_re),
+            LinkExtractor(allow='(%s)' % cat_re),
                 # deny=('(komplettansicht|weitere|index)$', '/schlagworte/')),
                 callback='parse_page',
                 follow=True
         ),
 
         # Sites which should be followed, but not saved
-        Rule(SgmlLinkExtractor(allow='', deny='')),
+        Rule(LinkExtractor(allow='', deny='')),
     )
 
     def parse_page(self, response):
