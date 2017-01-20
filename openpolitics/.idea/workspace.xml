@@ -18,18 +18,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/openpolitics/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="novinky_spider.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/openpolitics/spiders/novinky_spider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+            <state relative-caret-position="270">
+              <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -80,28 +70,40 @@
       <file leaf-file-name="publico_spyder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/openpolitics/spiders/publico_spyder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="45" lean-forward="true" selection-start-line="1" selection-start-column="45" selection-end-line="2" selection-end-column="47" />
+            <state relative-caret-position="330">
+              <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="faz_spider.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/openpolitics/spiders/faz_spider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jn_spyder.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/openpolitics/spiders/jn_spyder.py">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/openpolitics/spiders/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="36" column="21" lean-forward="false" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kathimerini_spider.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/openpolitics/spiders/kathimerini_spider.py">
+      <file leaf-file-name="zeit_spider.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/openpolitics/spiders/zeit_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+            <state relative-caret-position="480">
+              <caret line="38" column="19" lean-forward="false" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -145,8 +147,8 @@
         <option value="$PROJECT_DIR$/openpolitics/spiders/jn_spyder.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/bild_spider.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/idnes_spider.py" />
-        <option value="$PROJECT_DIR$/openpolitics/spiders/publico_spyder.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/rp_spider.py" />
+        <option value="$PROJECT_DIR$/openpolitics/spiders/publico_spyder.py" />
         <option value="$PROJECT_DIR$/openpolitics/settings.py" />
       </list>
     </option>
@@ -656,20 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/openpolitics/spiders/zeit_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="38" column="19" lean-forward="false" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/openpolitics/spiders/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/openpolitics/spiders/repubblica_spider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -681,13 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/openpolitics/spiders/faz_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -773,14 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/openpolitics/spiders/publico_spyder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="45" lean-forward="true" selection-start-line="1" selection-start-column="45" selection-end-line="2" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/openpolitics/spiders/rp_spider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -791,10 +764,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/openpolitics/spiders/faz_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openpolitics/spiders/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openpolitics/spiders/zeit_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="38" column="19" lean-forward="false" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openpolitics/spiders/publico_spyder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/openpolitics/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="21" />
+        <state relative-caret-position="270">
+          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
           <folding />
         </state>
       </provider>

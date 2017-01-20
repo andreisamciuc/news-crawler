@@ -13,14 +13,14 @@ class PublicoSpider(CrawlSpider):
     rules = (
         # Sites which should be saved
         Rule(
-            LinkExtractor(allow='(%s)' % cat_re),
+            LinkExtractor(allow=''),
                 # deny=('(komplettansicht|weitere|index)$', '/schlagworte/')),
                 callback='parse_page',
                 follow=True
         ),
 
         # Sites which should be followed, but not saved
-        Rule(LinkExtractor(allow='', deny='')),
+        Rule(LinkExtractor(allow='')),
     )
 
     def parse_page(self, response):
