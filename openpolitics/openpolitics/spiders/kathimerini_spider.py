@@ -29,6 +29,8 @@ class KathiSpider(CrawlSpider):
         body = [s.strip() for s in hxs.select('//article[@id="item-article"]//p//text()[not('
                                               'ancestor::script|ancestor::style|ancestor::noscript)]').extract()]
         time = hxs.select('//article[@id="item-article"]/header/time/@datetime').extract_first()
+        if not time:
+            time = hxs.select('//header[@id="page-header"]/time/@datetime').extract_first()
 
         if body:
             item = OpenpoliticsItem()
@@ -37,6 +39,8 @@ class KathiSpider(CrawlSpider):
             item['url'] = response.url
             # if time:
             item['date'] = dateutil.parser.parse(time)
+            # else:
+            #     item['time'] = time
             item['i'] = 7
 
             return item
