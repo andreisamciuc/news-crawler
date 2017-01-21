@@ -37,8 +37,8 @@ class KathiSpider(CrawlSpider):
             item['title'] = title
             item['text'] = body
             item['url'] = response.url
-            # if time:
-            item['date'] = dateutil.parser.parse(time)
+            if time:
+                item['date'] = dateutil.parser.parse(time)
             # else:
             #     item['time'] = time
             item['i'] = 7
