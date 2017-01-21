@@ -27,6 +27,9 @@ class WyboSpider(CrawlSpider):
         hxs = HtmlXPathSelector(response)
         title = hxs.select('//h1[@class="art-title"]/text()').extract_first()
         body = [s.strip() for s in hxs.select('//section[@class="art_content"]//p//text()').extract()]
+        if not body:
+            body = [s.strip() for s in hxs.select('//div[@id="artykul"]//text()').extract()]
+
         time = hxs.select('//time[@class="art-datetime"]/@datetime').extract_first()
         # if time:
         #     print time
