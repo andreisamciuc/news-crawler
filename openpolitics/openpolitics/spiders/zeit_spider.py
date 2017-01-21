@@ -1,5 +1,5 @@
 from scrapy.contrib.spiders import CrawlSpider, Rule
-from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor
+from scrapy.linkextractors import LinkExtractor
 from scrapy.selector import HtmlXPathSelector
 
 from openpolitics.items import OpenpoliticsItem
@@ -13,7 +13,7 @@ class ZeitSpider(CrawlSpider):
     rules = (
         # Sites which should be saved
         Rule(
-            SgmlLinkExtractor(
+            LinkExtractor(
                 allow=('/(online|news|politik|wirtschaft|meinung|gesellschaft|kultur|wissen|digital|' \
                        'studium|campus|karriere|lebensart|reisen|mobilitaet|sport|auto)[\/\w-]+$',
 
@@ -24,7 +24,7 @@ class ZeitSpider(CrawlSpider):
         ),
 
         # Sites which should be followed, but not saved
-        Rule(SgmlLinkExtractor(allow='(schlagworte|index)', deny='suche/')),
+        Rule(LinkExtractor(allow='(schlagworte|index)', deny='suche/')),
     )
 
     def parse_page(self, response):

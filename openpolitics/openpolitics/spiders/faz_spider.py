@@ -1,5 +1,5 @@
 from scrapy.contrib.spiders import CrawlSpider, Rule
-from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor
+from scrapy.linkextractors import LinkExtractor
 from scrapy.selector import HtmlXPathSelector
 
 from openpolitics.items import OpenpoliticsItem
@@ -13,14 +13,14 @@ class FAZSpider(CrawlSpider):
     rules = (
         # Sites which should be saved
         Rule(
-            SgmlLinkExtractor(allow='(%s)' % cat_re),
+            LinkExtractor(allow='(%s)' % cat_re),
                 # deny=('(komplettansicht|weitere|index)$', '/schlagworte/')),
                 callback='parse_page',
                 follow=True
         ),
 
         # Sites which should be followed, but not saved
-        Rule(SgmlLinkExtractor(allow='(%s)' % cat_re, deny='')),
+        Rule(LinkExtractor(allow='(%s)' % cat_re, deny='')),
     )
 
     def parse_page(self, response):
