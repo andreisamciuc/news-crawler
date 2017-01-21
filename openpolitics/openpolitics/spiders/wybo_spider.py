@@ -20,7 +20,7 @@ class WyboSpider(CrawlSpider):
         ),
 
         # Sites which should be followed, but not saved
-        Rule(SgmlLinkExtractor(allow='(%s)' % cat_re, deny='(sports)')),
+        Rule(SgmlLinkExtractor(allow='', deny='')),
     )
 
     def parse_page(self, response):
