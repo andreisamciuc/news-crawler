@@ -1,4 +1,4 @@
-from scrapy.contrib.spiders import CrawlSpider, Rule
+from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 from scrapy.selector import HtmlXPathSelector
 
@@ -28,8 +28,8 @@ class WyboSpider(CrawlSpider):
         title = hxs.select('//h1[@class="art-title"]/text()').extract_first()
         body = [s.strip() for s in hxs.select('//section[@class="art_content"]//p//text()').extract()]
         time = hxs.select('//time[@class="art-datetime"]/@datetime').extract_first()
-        if time:
-            print time
+        # if time:
+        #     print time
 
         if body:
             item = OpenpoliticsItem()

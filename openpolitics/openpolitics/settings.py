@@ -16,10 +16,10 @@ NEWSPIDER_MODULE = 'openpolitics.spiders'
 
 MONGO_URI = '10.1.0.5'
 MONGO_DATABASE = 'op-spider'
-LOG_ENABLED = False
+LOG_ENABLED = True
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'openpolitics (+http://www.yourdomain.com)'
+USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/602.4.8 (KHTML, like Gecko) Version/10.0.3 Safari/602.4.8'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False

@@ -12,7 +12,7 @@ class IdnesSpider(CrawlSpider):
     rules = (
         # Sites which should be saved
         Rule(
-            LinkExtractor(allow='(/16|/17)'),
+            LinkExtractor(allow='16'),
                 # deny=('(komplettansicht|weitere|index)$', '/schlagworte/')),
                 callback='parse_page',
                 follow=True
