@@ -30,8 +30,8 @@
       <file leaf-file-name="rp_spider.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/openpolitics/spiders/rp_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+            <state relative-caret-position="240">
+              <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -160,11 +160,11 @@
         <option value="$PROJECT_DIR$/openpolitics/spiders/idnes_spider.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/jn_spyder.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/bild_spider.py" />
-        <option value="$PROJECT_DIR$/openpolitics/spiders/rp_spider.py" />
         <option value="$PROJECT_DIR$/openpolitics/settings.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/kathimerini_spider.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/wybo_spider.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/se_spyder.py" />
+        <option value="$PROJECT_DIR$/openpolitics/spiders/rp_spider.py" />
       </list>
     </option>
   </component>
@@ -815,8 +815,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/openpolitics/spiders/rp_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        <state relative-caret-position="240">
+          <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
           <folding />
         </state>
       </provider>
