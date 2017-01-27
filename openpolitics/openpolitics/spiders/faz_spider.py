@@ -29,9 +29,9 @@ class FAZSpider(CrawlSpider):
         body = [s.strip() for s in hxs.select('//div[@class="FAZArtikelText"]//p//text()').extract()]
         time = hxs.select('//span[@class="Datum"]/@content').extract_first()
 
-        if body:
+        if body and time:
             if time.find('2016') == -1:
-                print time
+                return
             else:
                 item = OpenpoliticsItem()
                 item['title'] = title

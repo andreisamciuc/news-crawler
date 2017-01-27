@@ -21,7 +21,7 @@ class BleskSpider(CrawlSpider):
         ),
 
         # Sites which should be followed, but not saved
-        Rule(LinkExtractor(allow='(%s)' % cat_re, deny='(sport)')),
+        Rule(LinkExtractor(allow='', deny='')),
     )
 
     def parse_page(self, response):
@@ -30,9 +30,9 @@ class BleskSpider(CrawlSpider):
         body = [s.strip() for s in hxs.select('//div[@class="articleBody"]//p//text()').extract()]
         time = hxs.select('//div[@class="dateTime"]//text()').extract_first()
 
-        if body:
+        if body and time:
             if time.find('2016') == -1:
-                print time
+                return
             else:
                 item = OpenpoliticsItem()
                 item['title'] = title
