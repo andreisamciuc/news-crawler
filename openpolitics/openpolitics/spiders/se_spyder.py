@@ -31,10 +31,9 @@ class SeSpider(CrawlSpider):
         body = [s.strip() for s in hxs.select('//div[@class="article__body"]//p//text()').extract()]
         time = hxs.select('//meta[@itemprop="datePublished"]/@content').extract_first()
 
-
         if body:
             if time.find('2016') == -1:
-                print time
+                return
             else:
                 item = OpenpoliticsItem()
                 item['title'] = title
