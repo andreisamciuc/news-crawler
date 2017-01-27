@@ -14,7 +14,7 @@ class BleskSpider(CrawlSpider):
     rules = (
         # Sites which should be saved
         Rule(
-            LinkExtractor(allow='(%s)' % cat_re),
+            LinkExtractor(allow=''),
                 # deny=('(komplettansicht|weitere|index)$', '/schlagworte/')),
                 callback='parse_page',
                 follow=True
@@ -31,13 +31,16 @@ class BleskSpider(CrawlSpider):
         time = hxs.select('//div[@class="dateTime"]//text()').extract_first()
 
         if body:
-            item = OpenpoliticsItem()
-            item['title'] = title
-            item['text'] = body
-            item['url'] = response.url
-            # if time:
-            # item['date'] = dateutil.parser.parse(time)
-            item['time'] = time
-            item['i'] = 13
+            if time.find('2016') == -1:
+                print time
+            else:
+                item = OpenpoliticsItem()
+                item['title'] = title
+                item['text'] = body
+                item['url'] = response.url
+                # if time:
+                # item['date'] = dateutil.parser.parse(time)
+                item['time'] = time
+                item['i'] = 13
 
-            return item
+                return item

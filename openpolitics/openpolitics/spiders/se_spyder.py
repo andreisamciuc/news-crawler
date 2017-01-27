@@ -33,15 +33,18 @@ class SeSpider(CrawlSpider):
 
 
         if body:
-            item = OpenpoliticsItem()
-            item['title'] = title
-            item['text'] = body
-            item['url'] = response.url
-            if time:
-                item['date'] = dateutil.parser.parse(time)
+            if time.find('2016') == -1:
+                print time
             else:
-                item['time'] = hxs.select('//div[@class="akt_bar"]/span/text()').extract()
-            # item['time'] = time
-            item['i'] = 10
+                item = OpenpoliticsItem()
+                item['title'] = title
+                item['text'] = body
+                item['url'] = response.url
+                if time:
+                    item['date'] = dateutil.parser.parse(time)
+                else:
+                    item['time'] = hxs.select('//div[@class="akt_bar"]/span/text()').extract()
+                # item['time'] = time
+                item['i'] = 10
 
-            return item
+                return item

@@ -13,14 +13,14 @@ class TaneaSpider(CrawlSpider):
     rules = (
         # Sites which should be saved
         Rule(
-            LinkExtractor(allow='(%s)' % cat_re),
+            LinkExtractor(allow=''),
                 # deny=('(komplettansicht|weitere|index)$', '/schlagworte/')),
                 callback='parse_page',
                 follow=True
         ),
 
         # Sites which should be followed, but not saved
-        Rule(LinkExtractor(allow='(%s)' % cat_re, deny='(sports)')),
+        Rule(LinkExtractor(allow='', deny='')),
     )
 
     def parse_page(self, response):
@@ -30,12 +30,15 @@ class TaneaSpider(CrawlSpider):
         time = hxs.select('//meta[@itemprop="dateCreated"]/@content').extract_first()
 
         if body:
-            item = OpenpoliticsItem()
-            item['title'] = title
-            item['text'] = body
-            item['url'] = response.url
-            # if time:
-            item['date'] = dateutil.parser.parse(time)
-            item['i'] = 6
+            if time.find('2016') == -1:
+                print time
+            else:
+                item = OpenpoliticsItem()
+                item['title'] = title
+                item['text'] = body
+                item['url'] = response.url
+                # if time:
+                item['date'] = dateutil.parser.parse(time)
+                item['i'] = 6
 
-            return item
+                return item

@@ -30,13 +30,16 @@ class PublicoSpider(CrawlSpider):
         time = hxs.select('//time[@class="dateline"]/@datetime').extract_first()
 
         if body:
-            item = OpenpoliticsItem()
-            item['title'] = title
-            item['text'] = body
-            item['url'] = response.url
-            # if time:
-            item['date'] = dateutil.parser.parse(time)
-            # item['time'] = time
-            item['i'] = 11
+            if time.find('2016') == -1:
+                print time
+            else:
+                item = OpenpoliticsItem()
+                item['title'] = title
+                item['text'] = body
+                item['url'] = response.url
+                # if time:
+                item['date'] = dateutil.parser.parse(time)
+                # item['time'] = time
+                item['i'] = 11
 
-            return item
+                return item

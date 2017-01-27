@@ -30,12 +30,15 @@ class NovinkySpider(CrawlSpider):
         time = hxs.select('//p[@id="articleDate"]/text()').extract_first()
 
         if body:
-            item = OpenpoliticsItem()
-            item['title'] = title
-            item['text'] = body
-            item['url'] = response.url
-            # if time:
-            item['time'] = time
-            item['i'] = 3
+            if time.find('2016') == -1:
+                print time
+            else:
+                item = OpenpoliticsItem()
+                item['title'] = title
+                item['text'] = body
+                item['url'] = response.url
+                # if time:
+                item['time'] = time
+                item['i'] = 3
 
-            return item
+                return item

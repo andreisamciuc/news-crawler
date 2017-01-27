@@ -13,14 +13,14 @@ class FAZSpider(CrawlSpider):
     rules = (
         # Sites which should be saved
         Rule(
-            LinkExtractor(allow='(%s)' % cat_re),
+            LinkExtractor(allow=''),
                 # deny=('(komplettansicht|weitere|index)$', '/schlagworte/')),
                 callback='parse_page',
                 follow=True
         ),
 
         # Sites which should be followed, but not saved
-        Rule(LinkExtractor(allow='(%s)' % cat_re, deny='')),
+        Rule(LinkExtractor(allow='', deny='')),
     )
 
     def parse_page(self, response):
@@ -30,12 +30,15 @@ class FAZSpider(CrawlSpider):
         time = hxs.select('//span[@class="Datum"]/@content').extract_first()
 
         if body:
-            item = OpenpoliticsItem()
-            item['title'] = title
-            item['text'] = body
-            item['url'] = response.url
-            # if time:
-            item['time'] = time
-            item['i'] = 5
+            if time.find('2016') == -1:
+                print time
+            else:
+                item = OpenpoliticsItem()
+                item['title'] = title
+                item['text'] = body
+                item['url'] = response.url
+                # if time:
+                item['time'] = time
+                item['i'] = 5
 
-            return item
+                return item
