@@ -26,11 +26,11 @@ class IdnesSpider(CrawlSpider):
         hxs = HtmlXPathSelector(response)
         title = hxs.select('//meta[@property="og:title"]/@content').extract_first()
         body = [s.strip() for s in hxs.select('//div[@class="article-content-text"]//p//text()').extract()]
-        time = hxs.select('//div[@class="article-datetime"]//@text()').extract_first()
+        time = hxs.select('//div[@class="article-datetime"]//text()').extract_first()
 
         if body:
             if time.find('2016') == -1:
-                print time
+                return
             else:
                 item = OpenpoliticsItem()
                 item['title'] = title
@@ -39,4 +39,4 @@ class IdnesSpider(CrawlSpider):
                 item['time'] = time
                 item['i'] = 14
 
-            return item
+                return item

@@ -30,9 +30,9 @@ class JnSpider(CrawlSpider):
         body = [s.strip() for s in hxs.select('//div[@class="t-article-content"]//p//text()').extract()]
         time = hxs.select('//meta[@property="article:published_time"]/@content').extract_first()
 
-        if body:
+        if body and time:
             if time.find('2016') == -1:
-                print time
+                return
             else:
                 item = OpenpoliticsItem()
                 item['title'] = title

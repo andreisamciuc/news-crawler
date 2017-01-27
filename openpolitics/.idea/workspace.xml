@@ -27,28 +27,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rp_spider.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/openpolitics/spiders/rp_spider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="39" column="16" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tovima_spider.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/openpolitics/spiders/tovima_spider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="38" column="42" lean-forward="false" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
-              <folding>
-                <element signature="e#0#52#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="sued_spider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/openpolitics/spiders/sued_spider.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -64,6 +42,38 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
               <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rp_spider.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/openpolitics/spiders/rp_spider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jn_spyder.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/openpolitics/spiders/jn_spyder.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tanea_spider.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/openpolitics/spiders/tanea_spider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -99,19 +109,6 @@
             <state relative-caret-position="435">
               <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bild_spider.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/openpolitics/spiders/bild_spider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-                <marker date="1485524308000" expanded="true" signature="1187:1405" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -155,11 +152,9 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/zeit_spider.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/wybo_spider.py" />
-        <option value="$PROJECT_DIR$/openpolitics/spiders/jn_spyder.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/idnes_spider.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/kathimerini_spider.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/publico_spyder.py" />
-        <option value="$PROJECT_DIR$/openpolitics/spiders/rp_spider.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/tovima_spider.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/tanea_spider.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/bild_spider.py" />
@@ -169,6 +164,8 @@
         <option value="$PROJECT_DIR$/openpolitics/spiders/blesk_spyder.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/faz_spider.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/sued_spider.py" />
+        <option value="$PROJECT_DIR$/openpolitics/spiders/jn_spyder.py" />
+        <option value="$PROJECT_DIR$/openpolitics/spiders/rp_spider.py" />
         <option value="$PROJECT_DIR$/openpolitics/settings.py" />
       </list>
     </option>
@@ -692,13 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/openpolitics/spiders/jn_spyder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/openpolitics/spiders/kathimerini_spider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -710,16 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="44" column="16" lean-forward="false" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/openpolitics/spiders/tanea_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#52#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -741,20 +721,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/openpolitics/spiders/rp_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="39" column="16" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/openpolitics/spiders/tovima_spider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="38" column="42" lean-forward="false" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
           <folding>
-            <element signature="e#0#52#0" expanded="true" />
+            <element signature="e#0#52#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -822,6 +794,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openpolitics/spiders/tanea_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openpolitics/spiders/jn_spyder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openpolitics/spiders/rp_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
           <folding />
         </state>
       </provider>
