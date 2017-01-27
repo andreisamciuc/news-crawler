@@ -29,9 +29,9 @@ class SuedDeutscheSpider(CrawlSpider):
         body = [s.strip() for s in hxs.select('//section[@class="body"]//p//text()').extract()]
         time = hxs.select('//time[@class="timeformat"]/@datetime').extract_first()
 
-        if body:
+        if body and time:
             if time.find('2016') == -1:
-                print time
+                return
             else:
                 item = OpenpoliticsItem()
                 item['title'] = title
