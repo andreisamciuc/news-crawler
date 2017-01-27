@@ -29,9 +29,9 @@ class NovinkySpider(CrawlSpider):
         body = [s.strip() for s in hxs.select('//div[@class="articleBody"]//p//text()').extract()]
         time = hxs.select('//p[@id="articleDate"]/text()').extract_first()
 
-        if body:
+        if body and time:
             if time.find('2016') == -1:
-                print time
+                return
             else:
                 item = OpenpoliticsItem()
                 item['title'] = title

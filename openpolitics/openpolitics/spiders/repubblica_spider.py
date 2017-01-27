@@ -24,13 +24,15 @@ class RepubblicaSpider(CrawlSpider):
 
     def parse_page(self, response):
         hxs = HtmlXPathSelector(response)
-        title = hxs.select('//h1[@itemprop="headline name"]//text()[not(ancestor::script|ancestor::style|ancestor::noscript)]').extract_first().strip()
+        title = hxs.select('//h1[@itemprop="headline name"]//text()[not(ancestor::script|ancestor::style|ancestor::noscript)]').extract_first()
+        if title:
+            title = title.strip()
         body = [s.strip() for s in hxs.select('//span[@itemprop="articleBody"]//text()[not(ancestor::script|ancestor::style|ancestor::noscript|ancestor::h1)]').extract()]
         time = hxs.select('//meta[@property="article:published_time"]/@content').extract_first()
 
-        if body:
+        if body and time:
             if time.find('2016') == -1:
-                print time
+                return
             else:
                 item = OpenpoliticsItem()
                 item['title'] = title
