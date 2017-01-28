@@ -95,10 +95,10 @@
         <entry file="file://$PROJECT_DIR$/openpolitics/spiders/bild_spider.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="21" column="50" lean-forward="false" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+              <caret line="21" column="60" lean-forward="false" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
-                <marker date="1485609475000" expanded="true" signature="1229:1447" ph="..." />
+                <marker date="1485609556000" expanded="true" signature="1254:1472" ph="..." />
               </folding>
             </state>
           </provider>
@@ -825,10 +825,10 @@
     <entry file="file://$PROJECT_DIR$/openpolitics/spiders/bild_spider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" column="50" lean-forward="false" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+          <caret line="21" column="60" lean-forward="false" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
-            <marker date="1485609475000" expanded="true" signature="1229:1447" ph="..." />
+            <marker date="1485609556000" expanded="true" signature="1254:1472" ph="..." />
           </folding>
         </state>
       </provider>
