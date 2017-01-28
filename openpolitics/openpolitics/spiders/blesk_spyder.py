@@ -14,14 +14,14 @@ class BleskSpider(CrawlSpider):
     rules = (
         # Sites which should be saved
         Rule(
-            LinkExtractor(allow=''),
+            LinkExtractor(allow=['politika', 'svet', 'udalosti', 'ekonomka']),
                 # deny=('(komplettansicht|weitere|index)$', '/schlagworte/')),
                 callback='parse_page',
                 follow=True
         ),
 
         # Sites which should be followed, but not saved
-        Rule(LinkExtractor(allow='', deny='')),
+        Rule(LinkExtractor(allow=['zpravy', 'politika', 'svet', 'udalosti', 'ekonomka'])),
     )
 
     def parse_page(self, response):
