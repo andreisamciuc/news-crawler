@@ -12,14 +12,14 @@ class RepubblicaSpider(CrawlSpider):
     rules = (
         # Sites which should be saved
         Rule(
-            LinkExtractor(allow=['news']),
+            LinkExtractor(allow=['politica', 'economia']),
                 # deny=('(komplettansicht|weitere|index)$', '/schlagworte/')),
                 callback='parse_page',
                 follow=True
         ),
 
         # Sites which should be followed, but not saved
-        Rule(LinkExtractor(allow='', deny='')),
+        Rule(LinkExtractor(allow=['news', 'archivio'], deny='')),
     )
 
     def parse_page(self, response):
