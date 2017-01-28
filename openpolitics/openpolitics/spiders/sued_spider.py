@@ -20,7 +20,7 @@ class SuedDeutscheSpider(CrawlSpider):
         ),
 
         # Sites which should be followed, but not saved
-        Rule(LinkExtractor(allow=['politik', 'wirtschaft'], deny='')),
+        Rule(LinkExtractor(allow=['politik', 'wirtschaft'])),
     )
 
     def parse_page(self, response):
