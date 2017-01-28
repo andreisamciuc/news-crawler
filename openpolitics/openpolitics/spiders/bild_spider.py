@@ -19,7 +19,7 @@ class BildSpider(CrawlSpider):
         ),
 
         # Sites which should be followed, but not saved
-        Rule(LinkExtractor(allow=['news', 'politik', 'geld'], deny=['video', 'mobile'])),
+        Rule(LinkExtractor(allow=['news', 'politik', 'geld'])),
     )
 
     def parse_page(self, response):
