@@ -8,9 +8,39 @@ import dateutil.parser
 class NovinkySpider(CrawlSpider):
     name = 'novinky'
     allowed_domains = ['novinky.cz']
-    start_urls = ['http://www.novinky.cz/archiv?id=8&date=1.12.2016&listType=month',
-                  'http://www.novinky.cz/archiv?id=2&date=1.12.2016&listType=month',
-                  'http://www.novinky.cz/archiv?id=5&date=1.12.2016&listType=month']
+    start_urls = ['http://www.novinky.cz/archiv?id=8&date=1.01.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=2&date=1.01.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=5&date=1.01.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=8&date=1.02.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=2&date=1.02.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=5&date=1.02.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=8&date=1.03.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=2&date=1.03.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=5&date=1.03.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=8&date=1.04.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=2&date=1.04.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=5&date=1.04.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=8&date=1.05.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=2&date=1.05.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=5&date=1.05.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=8&date=1.06.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=2&date=1.06.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=5&date=1.06.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=8&date=1.07.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=2&date=1.07.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=5&date=1.07.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=8&date=1.08.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=2&date=1.08.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=5&date=1.08.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=8&date=1.09.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=2&date=1.09.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=5&date=1.09.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=8&date=1.10.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=2&date=1.10.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=5&date=1.10.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=8&date=1.11.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=2&date=1.11.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=5&date=1.11.2016&listType=month']
     cat_re = 'ekonomika|domaci|zahranicni'
     rules = (
         # Sites which should be saved
