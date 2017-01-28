@@ -7,6 +7,7 @@ import dateutil.parser
 
 from simhash import Simhash
 
+
 class SeSpider(CrawlSpider):
     name = 'se'
     allowed_domains = ['se.pl']
@@ -15,14 +16,13 @@ class SeSpider(CrawlSpider):
     rules = (
         # Sites which should be saved
         Rule(
-            LinkExtractor(allow=''),
-                # deny=('(komplettansicht|weitere|index)$', '/schlagworte/')),
-                callback='parse_page',
-                follow=True
+            LinkExtractor(allow=['polityka', 'swiat']),
+            callback='parse_page',
+            follow=True
         ),
 
         # Sites which should be followed, but not saved
-        Rule(LinkExtractor(allow='', deny='')),
+        Rule(LinkExtractor(allow=['polityka', 'swiat'])),
     )
 
     def parse_page(self, response):
