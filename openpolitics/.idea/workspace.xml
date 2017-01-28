@@ -82,8 +82,8 @@
       <file leaf-file-name="novinky_spider.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/openpolitics/spiders/novinky_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="79" lean-forward="false" selection-start-line="22" selection-start-column="79" selection-end-line="22" selection-end-column="79" />
+            <state relative-caret-position="150">
+              <caret line="10" column="147" lean-forward="true" selection-start-line="10" selection-start-column="147" selection-end-line="10" selection-end-column="147" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
               </folding>
@@ -824,8 +824,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/openpolitics/spiders/novinky_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="79" lean-forward="false" selection-start-line="22" selection-start-column="79" selection-end-line="22" selection-end-column="79" />
+        <state relative-caret-position="150">
+          <caret line="10" column="147" lean-forward="true" selection-start-line="10" selection-start-column="147" selection-end-line="10" selection-end-column="147" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
           </folding>
