@@ -20,7 +20,7 @@ class NovinkySpider(CrawlSpider):
         ),
 
         # Sites which should be followed, but not saved
-        Rule(LinkExtractor(allow=['ekonomika', 'domaci', 'zahranicni'], deny='')),
+        Rule(LinkExtractor(allow='', deny='')),
     )
 
     def parse_page(self, response):
