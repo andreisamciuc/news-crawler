@@ -13,14 +13,14 @@ class NovinkySpider(CrawlSpider):
     rules = (
         # Sites which should be saved
         Rule(
-            LinkExtractor(allow=['ekonomika', 'domaci', 'zahranicni', 'archiv']),
+            LinkExtractor(allow=['ekonomika', 'domaci', 'zahranicni']),
                 # deny=('(komplettansicht|weitere|index)$', '/schlagworte/')),
                 callback='parse_page',
                 follow=True
         ),
 
         # Sites which should be followed, but not saved
-        Rule(LinkExtractor(allow='', deny='')),
+        Rule(LinkExtractor(allow=['ekonomika', 'domaci', 'zahranicni', 'archiv'], deny='')),
     )
 
     def parse_page(self, response):
