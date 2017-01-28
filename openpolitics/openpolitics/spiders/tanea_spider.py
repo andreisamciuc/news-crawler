@@ -8,19 +8,19 @@ import dateutil.parser
 class TaneaSpider(CrawlSpider):
     name = 'tanea'
     allowed_domains = ['tanea.gr']
-    start_urls = ['http://www.tanea.gr']
+    start_urls = ['http://www.tanea.gr', 'http://www.tanea.gr/Search/?area=0&author=&cid=-1&so=1&sa=0&pt=3&words=brexit']
     cat_re = 'news'
     rules = (
         # Sites which should be saved
         Rule(
-            LinkExtractor(allow=''),
+            LinkExtractor(allow=['news', 'politics', 'greece', 'world', 'economy']),
                 # deny=('(komplettansicht|weitere|index)$', '/schlagworte/')),
                 callback='parse_page',
                 follow=True
         ),
 
         # Sites which should be followed, but not saved
-        Rule(LinkExtractor(allow='', deny='')),
+        Rule(LinkExtractor(allow=['news', 'politics', 'greece', 'world', 'economy', 'Search'])),
     )
 
     def parse_page(self, response):
@@ -29,9 +29,9 @@ class TaneaSpider(CrawlSpider):
         body = [s.strip() for s in hxs.select('//div[@id="article-content"]//text()').extract()]
         time = hxs.select('//meta[@itemprop="dateCreated"]/@content').extract_first()
 
-        if body:
+        if body and time:
             if time.find('2016') == -1:
-                print time
+                return
             else:
                 item = OpenpoliticsItem()
                 item['title'] = title
