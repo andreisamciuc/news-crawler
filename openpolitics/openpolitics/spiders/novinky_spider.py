@@ -8,9 +8,9 @@ import dateutil.parser
 class NovinkySpider(CrawlSpider):
     name = 'novinky'
     allowed_domains = ['novinky.cz']
-    start_urls = ['http://www.novinky.cz/archiv?id=8&date=1.12.2016',
-                  'http://www.novinky.cz/archiv?id=2&date=1.12.2016',
-                  'http://www.novinky.cz/archiv?id=5&date=1.12.2016']
+    start_urls = ['http://www.novinky.cz/archiv?id=8&date=1.12.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=2&date=1.12.2016&listType=month',
+                  'http://www.novinky.cz/archiv?id=5&date=1.12.2016&listType=month']
     cat_re = 'ekonomika|domaci|zahranicni'
     rules = (
         # Sites which should be saved
