@@ -15,18 +15,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="se_spyder.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/openpolitics/spiders/se_spyder.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#52#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="sued_spider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/openpolitics/spiders/sued_spider.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -103,7 +91,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="repubblica_spider.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bild_spider.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/openpolitics/spiders/bild_spider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="50" lean-forward="false" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+                <marker date="1485609475000" expanded="true" signature="1229:1447" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="repubblica_spider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/openpolitics/spiders/repubblica_spider.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
@@ -157,7 +158,6 @@
         <option value="$PROJECT_DIR$/openpolitics/spiders/publico_spyder.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/tovima_spider.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/tanea_spider.py" />
-        <option value="$PROJECT_DIR$/openpolitics/spiders/bild_spider.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/se_spyder.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/blesk_spyder.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/jn_spyder.py" />
@@ -167,6 +167,7 @@
         <option value="$PROJECT_DIR$/openpolitics/spiders/sued_spider.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/novinky_spider.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/repubblica_spider.py" />
+        <option value="$PROJECT_DIR$/openpolitics/spiders/bild_spider.py" />
       </list>
     </option>
   </component>
@@ -731,17 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/openpolitics/spiders/bild_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-            <marker date="1485524308000" expanded="true" signature="1187:1405" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/openpolitics/spiders/se_spyder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -829,6 +819,17 @@
         <state relative-caret-position="135">
           <caret line="14" column="54" lean-forward="false" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openpolitics/spiders/bild_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="50" lean-forward="false" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+            <marker date="1485609475000" expanded="true" signature="1229:1447" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
