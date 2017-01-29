@@ -13,7 +13,7 @@ class TaneaSpider(CrawlSpider):
     rules = (
         # Sites which should be saved
         Rule(
-            LinkExtractor(allow=['news', 'politics', 'greece', 'world', 'economy'], deny=['/?iid=2']),
+            LinkExtractor(allow=['politics', 'greece', 'world', 'economy'], deny=['/?iid=2']),
                 # deny=('(komplettansicht|weitere|index)$', '/schlagworte/')),
                 callback='parse_page',
                 follow=True
