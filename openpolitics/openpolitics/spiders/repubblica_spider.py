@@ -12,7 +12,7 @@ class RepubblicaSpider(CrawlSpider):
     rules = (
         # Sites which should be saved
         Rule(
-            LinkExtractor(allow=['politica', 'economia']),
+            LinkExtractor(allow=['politica', 'economia'], deny=['miojob']),
                 # deny=('(komplettansicht|weitere|index)$', '/schlagworte/')),
                 callback='parse_page',
                 follow=True
