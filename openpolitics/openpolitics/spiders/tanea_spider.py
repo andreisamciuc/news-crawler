@@ -8,20 +8,23 @@ import dateutil.parser
 class TaneaSpider(CrawlSpider):
     name = 'tanea'
     allowed_domains = ['tanea.gr']
-    start_urls = ['http://www.tanea.gr', 'http://www.tanea.gr/Search/?area=0&author=&cid=-1&so=1&sa=0&pt=3&words=brexit']
+    start_urls = ['http://www.tanea.gr', 'http://www.tanea.gr/search/?dos=1&area=0&cid=-1&so=1&pt=3&pg=34&author'
+                                         '=&words=brexit&fPeriod=29/01/2016&tPeriod=30/01/2017']
     cat_re = 'news'
-    rules = (
+    rules = [
         # Sites which should be saved
         Rule(
             LinkExtractor(allow=['politics', 'greece', 'world', 'economy'], deny=['/?iid=2', 'articlelist']),
-                # deny=('(komplettansicht|weitere|index)$', '/schlagworte/')),
-                callback='parse_page',
-                follow=True
+            # deny=('(komplettansicht|weitere|index)$', '/schlagworte/')),
+            callback='parse_page',
+            follow=True
         ),
 
         # Sites which should be followed, but not saved
-        Rule(LinkExtractor(allow=['Search/?area=0&author=&cid=-1&so=1&sa=0&pt=3&words=brexit'], deny=['articlelist'])),
-    )
+        Rule(LinkExtractor(allow=['http://www.tanea.gr/search/?dos=1&area=0&cid=-1'
+                                  '&so=1&pt=3&pg=[0-9]{1-2}&author=&words=brexit&fPeriod=29/01/2016&tPeriod=30/01/2017'],
+                           deny=['articlelist'])),
+    ]
 
     def parse_page(self, response):
         hxs = HtmlXPathSelector(response)
