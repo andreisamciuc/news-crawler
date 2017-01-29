@@ -8,7 +8,7 @@ import dateutil.parser
 class SuedDeutscheSpider(CrawlSpider):
     name = 'sued'
     allowed_domains = ['sueddeutsche.de']
-    start_urls = ['http://www.sueddeutsche.de']
+    start_urls = ['http://www.sueddeutsche.de/news?search=brexit&sort=date&all%5B%5D=dep&all%5B%5D=typ&all%5B%5D=sys&time=2017-01-29T00%3A00%2F2017-01-29T23%3A59&startDate=01.01.2016&endDate=01.01.2017']
     cat_re = 'politik|wirtschaft'
     rules = (
         # Sites which should be saved
@@ -20,7 +20,7 @@ class SuedDeutscheSpider(CrawlSpider):
         ),
 
         # Sites which should be followed, but not saved
-        Rule(LinkExtractor(allow=['politik', 'wirtschaft'])),
+        Rule(LinkExtractor(allow=['de/news/page/[0-9]{1-3}'])),
     )
 
     def parse_page(self, response):
