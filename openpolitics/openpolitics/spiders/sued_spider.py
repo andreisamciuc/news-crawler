@@ -13,14 +13,14 @@ class SuedDeutscheSpider(CrawlSpider):
     rules = (
         # Sites which should be saved
         Rule(
-            LinkExtractor(allow=['politik', 'wirtschaft']),
+            LinkExtractor(allow=['politik', 'wirtschaft'], deny=['2-2-2']),
                 # deny=('(komplettansicht|weitere|index)$', '/schlagworte/')),
                 callback='parse_page',
                 follow=True
         ),
 
         # Sites which should be followed, but not saved
-        Rule(LinkExtractor(allow=['de/news/page/[0-9]{1-3}'])),
+        Rule(LinkExtractor(allow=['de/news/page/[0-9]{1-3}'], deny=['2-2-2'])),
     )
 
     def parse_page(self, response):
