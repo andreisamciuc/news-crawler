@@ -37,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blesk_spyder.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="blesk_spyder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/openpolitics/spiders/blesk_spyder.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
@@ -57,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/openpolitics/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+            <state relative-caret-position="240">
+              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -157,7 +157,6 @@
         <option value="$PROJECT_DIR$/openpolitics/spiders/tovima_spider.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/jn_spyder.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/rp_spider.py" />
-        <option value="$PROJECT_DIR$/openpolitics/settings.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/faz_spider.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/novinky_spider.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/bild_spider.py" />
@@ -166,6 +165,7 @@
         <option value="$PROJECT_DIR$/openpolitics/spiders/repubblica_spider.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/sued_spider.py" />
         <option value="$PROJECT_DIR$/openpolitics/spiders/blesk_spyder.py" />
+        <option value="$PROJECT_DIR$/openpolitics/settings.py" />
       </list>
     </option>
   </component>
@@ -791,14 +791,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/openpolitics/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/openpolitics/spiders/repubblica_spider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -827,6 +819,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openpolitics/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="21" />
           <folding />
         </state>
       </provider>
