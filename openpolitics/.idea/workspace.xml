@@ -104,8 +104,11 @@
         <entry file="file://$PROJECT_DIR$/openpolitics/spiders/repubblica_spider.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="25" column="55" lean-forward="false" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
-              <folding />
+              <caret line="25" column="93" lean-forward="false" selection-start-line="25" selection-start-column="93" selection-end-line="29" selection-end-column="86" />
+              <folding>
+                <marker date="1485702704000" expanded="true" signature="477:1626" ph="..." />
+                <marker date="1485702704000" expanded="true" signature="1164:1622" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -130,11 +133,13 @@
       <find>from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor</find>
       <find>from scrapy.contrib.linkextractors import LinkExtractor</find>
       <find>SgmlLinkExtractor</find>
+      <find>'20</find>
     </findStrings>
     <replaceStrings>
       <replace>from scrapy.contrib.linkextractors import LinkExtractor</replace>
       <replace>from scrapy.linkextractors import LinkExtractor</replace>
       <replace>LinkExtractor</replace>
+      <replace>'/20</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/openpolitics/spiders</dir>
@@ -803,14 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/openpolitics/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/openpolitics/spiders/se_spyder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -821,11 +818,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/openpolitics/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/openpolitics/spiders/repubblica_spider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="25" column="55" lean-forward="false" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
-          <folding />
+          <caret line="25" column="93" lean-forward="false" selection-start-line="25" selection-start-column="93" selection-end-line="29" selection-end-column="86" />
+          <folding>
+            <marker date="1485702704000" expanded="true" signature="477:1626" ph="..." />
+            <marker date="1485702704000" expanded="true" signature="1164:1622" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
