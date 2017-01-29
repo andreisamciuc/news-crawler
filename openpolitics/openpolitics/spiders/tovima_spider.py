@@ -9,18 +9,20 @@ class TovimaSpider(CrawlSpider):
     name = 'tovima'
     allowed_domains = ['tovima.gr']
     start_urls = ['http://www.tovima.gr/search/?dos=1&cid=-1&sa=0&so=1&regioDate=4&pg=31&author=&words=brexit']
-    rules = (
+    rules = [
         # Sites which should be saved
         Rule(
-            LinkExtractor(allow=['politics/article', 'finance/article', 'world/article']),
-                # deny=('(komplettansicht|weitere|index)$', '/schlagworte/')),
-                callback='parse_page',
-                follow=True
+            LinkExtractor(allow=['politics/article', 'finance/article', 'world/article'], deny=['&h1=true']),
+            # deny=('(komplettansicht|weitere|index)$', '/schlagworte/')),
+            callback='parse_page',
+            follow=True
         ),
 
         # Sites which should be followed, but not saved
-        Rule(LinkExtractor(allow=['search/?dos=1&cid=-1&sa=0&so=1&regioDate=4&pg=[0-9]{1-3}&author=&words=brexit'])),
-    )
+        Rule(LinkExtractor(allow=['search/?dos=1&cid=-1&sa=0&so=1&reg'
+                                  'ioDate=4&pg=[0-9]{1-3}&author=&words=brexit'],
+                           deny=['&h1=true'])),
+    ]
 
     def parse_page(self, response):
         hxs = HtmlXPathSelector(response)
