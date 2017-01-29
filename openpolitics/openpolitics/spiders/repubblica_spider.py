@@ -41,7 +41,7 @@ class RepubblicaSpider(CrawlSpider):
         time = hxs.select('//meta[@property="article:published_time"]/@content').extract_first()
 
         if body and time:
-            if time.find('/2016') == -1:
+            if time.find('2016') == -1:
                 return
             else:
                 item = OpenpoliticsItem()
