@@ -14,14 +14,14 @@ class BleskSpider(CrawlSpider):
     rules = (
         # Sites which should be saved
         Rule(
-            LinkExtractor(allow=['zpravy']),
+            LinkExtractor(allow=['zpravy'], deny=['chat', '//tv']),
                 # deny=('(komplettansicht|weitere|index)$', '/schlagworte/')),
                 callback='parse_page',
                 follow=True
         ),
 
         # Sites which should be followed, but not saved
-        Rule(LinkExtractor(allow=['zpravy'])),
+        # Rule(LinkExtractor(allow=['zpravy'])),
     )
 
     def parse_page(self, response):
