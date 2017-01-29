@@ -8,30 +8,31 @@ import dateutil.parser
 class TovimaSpider(CrawlSpider):
     name = 'tovima'
     allowed_domains = ['tovima.gr']
-    start_urls = ['http://www.tovima.gr']
-    cat_re = 'politics/article|finance/article|world/article'
+    start_urls = ['http://www.tovima.gr/search/?dos=1&cid=-1&sa=0&so=1&regioDate=4&pg=31&author=&words=brexit']
     rules = (
         # Sites which should be saved
         Rule(
-            LinkExtractor(allow=''),
+            LinkExtractor(allow=['politics/article', 'finance/article', 'world/article']),
                 # deny=('(komplettansicht|weitere|index)$', '/schlagworte/')),
                 callback='parse_page',
                 follow=True
         ),
 
         # Sites which should be followed, but not saved
-        Rule(LinkExtractor(allow='', deny='')),
+        Rule(LinkExtractor(allow=['search/?dos=1&cid=-1&sa=0&so=1&regioDate=4&pg=[0-9]{1-3}&author=&words=brexit'])),
     )
 
     def parse_page(self, response):
         hxs = HtmlXPathSelector(response)
         title = hxs.select('//meta[@property="og:title"]/@content').extract_first()
         body = [s.strip() for s in hxs.select('//div[@id="intext_content_tag"]//div//text()').extract()]
-        time = hxs.select('//div[@class="article_info"]/text()').extract_first().strip()
+        time = hxs.select('//div[@class="article_info"]/text()').extract_first()
+        if time:
+            time = time.strip()
 
-        if body:
+        if body and time:
             if time.find('2016') == -1:
-                print time
+                return
             else:
                 item = OpenpoliticsItem()
                 item['title'] = title
