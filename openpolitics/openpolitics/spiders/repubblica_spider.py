@@ -8,7 +8,7 @@ import dateutil.parser
 class RepubblicaSpider(CrawlSpider):
     name = 'repubblica'
     allowed_domains = ['repubblica.it']
-    start_urls = ['http://www.repubblica.it']
+    start_urls = ['http://ricerca.repubblica.it/ricerca/repubblica?ref=HRHS&query=brexit&page=1']
     rules = (
         # Sites which should be saved
         Rule(
@@ -19,7 +19,7 @@ class RepubblicaSpider(CrawlSpider):
         ),
 
         # Sites which should be followed, but not saved
-        Rule(LinkExtractor(allow=['news', 'archivio'], deny='')),
+        Rule(LinkExtractor(allow=['news', 'archivio', 'ricerca'], deny='')),
     )
 
     def parse_page(self, response):
