@@ -20,7 +20,7 @@ class TaneaSpider(CrawlSpider):
         ),
 
         # Sites which should be followed, but not saved
-        Rule(LinkExtractor(allow=['Search/?area=0&author=&cid=-1&so=1&sa=0&pt=3&words=brexit'])),
+        Rule(LinkExtractor(allow=['Search/?area=0&author=&cid=-1&so=1&sa=0&pt=3&words=brexit'], deny=['articlelist'])),
     )
 
     def parse_page(self, response):
