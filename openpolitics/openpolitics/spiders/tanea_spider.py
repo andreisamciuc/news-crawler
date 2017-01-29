@@ -13,14 +13,14 @@ class TaneaSpider(CrawlSpider):
     rules = (
         # Sites which should be saved
         Rule(
-            LinkExtractor(allow=['news', 'politics', 'greece', 'world', 'economy']),
+            LinkExtractor(allow=['news', 'politics', 'greece', 'world', 'economy'], deny=['/?iid=2']),
                 # deny=('(komplettansicht|weitere|index)$', '/schlagworte/')),
                 callback='parse_page',
                 follow=True
         ),
 
         # Sites which should be followed, but not saved
-        Rule(LinkExtractor(allow=['news', 'politics', 'greece', 'world', 'economy', 'Search'])),
+        Rule(LinkExtractor(allow=['Search/?area=0&author=&cid=-1&so=1&sa=0&pt=3&words=brexit'])),
     )
 
     def parse_page(self, response):
