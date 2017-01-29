@@ -19,7 +19,7 @@ class RepubblicaSpider(CrawlSpider):
         ),
 
         # Sites which should be followed, but not saved
-        Rule(LinkExtractor(allow=['news', 'archivio', 'ricerca'], deny='')),
+        Rule(LinkExtractor(allow=['news', 'archivio', 'ricerca'], deny=['miojob'])),
     )
 
     def parse_page(self, response):
