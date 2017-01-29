@@ -13,16 +13,20 @@ class RepubblicaSpider(CrawlSpider):
     rules = (
         # Sites which should be saved
         Rule(
-            LinkExtractor(allow=['politica', 'economia'], deny=['miojob', '2015', '2014', '2013', '2012',
-                                                                '2011', '2010', '2009', '2008']),
+            LinkExtractor(allow=['politica', 'economia'], deny=['miojob', '/2015', '/2014', '/2013', '/2012',
+                                                                '/2011', '/2010', '/2009', '/2008',
+                                                                '/2007', '/2006', '/2005', '/2004',
+                                                                '/2003', '/2002', '/2001', '/2000']),
             # deny=('(komplettansicht|weitere|index)$', '/schlagworte/')),
             callback='parse_page',
             follow=True
         ),
 
         # Sites which should be followed, but not saved
-        Rule(LinkExtractor(allow=['news', 'archivio'], deny=['miojob', '2015', '2014', '2013', '2012',
-                                                                        '2011', '2010', '2009', '2008'])),
+        Rule(LinkExtractor(allow=['news', 'archivio'], deny=['miojob', '/2015', '/2014', '/2013', '/2012',
+                                                             '/2011', '/2010', '/2009', '/2008',
+                                                             '/2007', '/2006', '/2005', '/2004',
+                                                             '/2003', '/2002', '/2001', '/2000'])),
     )
 
     def parse_page(self, response):
@@ -36,7 +40,7 @@ class RepubblicaSpider(CrawlSpider):
         time = hxs.select('//meta[@property="article:published_time"]/@content').extract_first()
 
         if body and time:
-            if time.find('2016') == -1:
+            if time.find('/2016') == -1:
                 return
             else:
                 item = OpenpoliticsItem()
